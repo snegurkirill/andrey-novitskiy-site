@@ -1,0 +1,12 @@
+.DS_Store
+.claude/
+
+# Kept locally, never published (the repo is public — Pages requires it):
+#   source/   the raw Google Sheet export (.xlsx + .csv)
+#   Works/    full-resolution originals, ~14MB; the page ships 900px copies
+#   Labels/   the description cards pasted into the sheet
+Core/source/
+Core/Works/
+Core/Labels/
+Core/assets/banner.png
+Core/assets/logo-core-x-a149.png
