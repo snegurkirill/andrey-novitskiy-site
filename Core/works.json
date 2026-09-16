@@ -18,7 +18,8 @@
       "image": "Works/01-african-souvenir.jpg",
       "label": "Labels/01-african-souvenir.png",
       "sourceRow": 4,
-      "sourceImage": "image16.jpg"
+      "sourceImage": "image16.jpg",
+      "status": null
     },
     {
       "id": 2,
@@ -34,7 +35,8 @@
       "image": "Works/02-abat-jour.jpg",
       "label": "Labels/02-abat-jour.png",
       "sourceRow": 5,
-      "sourceImage": "image18.jpg"
+      "sourceImage": "image18.jpg",
+      "status": null
     },
     {
       "id": 3,
@@ -50,7 +52,8 @@
       "image": "Works/03-tiger.jpg",
       "label": "Labels/03-tiger.png",
       "sourceRow": 6,
-      "sourceImage": "image17.jpg"
+      "sourceImage": "image17.jpg",
+      "status": null
     },
     {
       "id": 4,
@@ -66,7 +69,8 @@
       "image": "Works/04-liza.jpg",
       "label": "Labels/04-liza.png",
       "sourceRow": 7,
-      "sourceImage": "image19.jpg"
+      "sourceImage": "image19.jpg",
+      "status": null
     },
     {
       "id": 5,
@@ -82,7 +86,8 @@
       "image": "Works/05-dont-forget-to-be-happy.jpg",
       "label": "Labels/05-dont-forget-to-be-happy.png",
       "sourceRow": 8,
-      "sourceImage": "image21.jpg"
+      "sourceImage": "image21.jpg",
+      "status": null
     },
     {
       "id": 6,
@@ -98,7 +103,8 @@
       "image": "Works/06-on-ni-v-chem-ne-vinovat.png",
       "label": null,
       "sourceRow": 9,
-      "sourceImage": "image7.png"
+      "sourceImage": "image7.png",
+      "status": null
     },
     {
       "id": 7,
@@ -114,7 +120,8 @@
       "image": "Works/07-metro-pool.png",
       "label": null,
       "sourceRow": 10,
-      "sourceImage": "image14.png"
+      "sourceImage": "image14.png",
+      "status": null
     },
     {
       "id": 8,
@@ -130,7 +137,8 @@
       "image": "Works/08-its-not-a-dream.png",
       "label": null,
       "sourceRow": 11,
-      "sourceImage": "image12.png"
+      "sourceImage": "image12.png",
+      "status": null
     },
     {
       "id": 9,
@@ -146,7 +154,8 @@
       "image": "Works/09-slow-dance.png",
       "label": null,
       "sourceRow": 12,
-      "sourceImage": "image2.png"
+      "sourceImage": "image2.png",
+      "status": null
     },
     {
       "id": 10,
@@ -162,7 +171,8 @@
       "image": "Works/10-please-stop.png",
       "label": null,
       "sourceRow": 13,
-      "sourceImage": "image15.png"
+      "sourceImage": "image15.png",
+      "status": null
     },
     {
       "id": 11,
@@ -178,7 +188,8 @@
       "image": "Works/11-work-in-progress.png",
       "label": null,
       "sourceRow": 14,
-      "sourceImage": "image11.png"
+      "sourceImage": "image11.png",
+      "status": null
     },
     {
       "id": 12,
@@ -194,7 +205,8 @@
       "image": "Works/12-scor-pie.png",
       "label": null,
       "sourceRow": 15,
-      "sourceImage": "image8.png"
+      "sourceImage": "image8.png",
+      "status": "sold"
     },
     {
       "id": 13,
@@ -210,7 +222,12 @@
       "image": "Works/13-myxa.jpg",
       "label": "Labels/13-myxa.png",
       "sourceRow": 16,
-      "sourceImage": "image20.jpg"
+      "sourceImage": "image20.jpg",
+      "status": null
     }
-  ]
+  ],
+  "statuses": {
+    "reserved": "Забронирована",
+    "sold": "Приобретена"
+  }
 }

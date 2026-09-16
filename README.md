@@ -9,6 +9,16 @@ or a subpath on any host unchanged.
 
 The repo root redirects to `Core/`.
 
+## Updating the works
+
+Card data lives in `Core/works.json`. After editing it, regenerate the grid:
+
+    python3 build.py
+
+To set a status, give the work `"status": "reserved"` (Забронирована, blue dot)
+or `"sold"` (Приобретена, red dot); `null` clears it. The head, logo and bio in
+`Core/index.html` are edited by hand — `build.py` only rewrites the cards.
+
 ## Deploy
 
 GitHub Pages, serving `main` from the repo root. Every push to `main` rebuilds

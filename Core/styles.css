@@ -27,6 +27,9 @@
   --link: #7eb0ff;
   --paper: #fff;
 
+  --status-reserved: #2f6bff;   /* blue dot */
+  --status-sold: #ff3b30;       /* red dot */
+
   --font: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto,
           "Helvetica Neue", Arial, sans-serif;
   --font-caption: "Source Sans Pro", "Source Sans 3", system-ui,
@@ -185,11 +188,30 @@ body {
   text-wrap: balance;
 }
 
-.work__price {
-  display: block;
-  margin-top: calc(2 * var(--u));
-  font-variant-numeric: tabular-nums;
+/* Card caption, top to bottom: title / size, materials / price / status. */
+.work figcaption > span { display: block; }
+
+.work__details,
+.work__price { margin-top: calc(2 * var(--u)); }
+
+.work__price { font-variant-numeric: tabular-nums; }
+
+/* Status: last line, 4px under the caption size, led by a coloured dot.
+   Add a state by adding a modifier with its own --dot. */
+.work__status {
+  margin-top: calc(6 * var(--u));
+  font-size: calc((var(--fs-caption) - 4) * var(--u));
 }
+.work__status::before {
+  content: "•";
+  color: var(--dot);
+  font-size: 1.6em;          /* the bare glyph is a speck at 10px */
+  line-height: 0;
+  vertical-align: -0.08em;
+  margin-right: 0.2em;
+}
+.work__status--reserved { --dot: var(--status-reserved); }
+.work__status--sold     { --dot: var(--status-sold); }
 
 /* --- desktop -------------------------------------------------------------
    Same cards at the same 202px width, four across instead of two, hung off the
