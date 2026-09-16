@@ -189,7 +189,7 @@ body {
 }
 
 /* Card caption, top to bottom: title / price / size, materials / status.
-   The last two are secondary: 4px under the caption size. */
+   The last two are secondary: 2px under the caption size, 120% leading. */
 .work figcaption > span { display: block; }
 
 .work__price {
@@ -198,7 +198,10 @@ body {
 }
 
 .work__details,
-.work__status { font-size: calc((var(--fs-caption) - 4) * var(--u)); }
+.work__status {
+  font-size: calc((var(--fs-caption) - 2) * var(--u));
+  line-height: 1.2;
+}
 
 .work__details { margin-top: calc(6 * var(--u)); }
 .work__status  { margin-top: calc(4 * var(--u)); }
@@ -206,7 +209,7 @@ body {
 .work__status::before {
   content: "•";
   color: var(--dot);
-  font-size: 1.6em;          /* the bare glyph is a speck at 10px */
+  font-size: 1.6em;          /* the bare glyph is a speck at 12px */
   line-height: 0;
   vertical-align: -0.08em;
   margin-right: 0.2em;
