@@ -42,8 +42,8 @@ def card(work, statuses):
           <img src="{src}" alt="{title}" width="{w}" height="{h}" loading="lazy" decoding="async">
           <figcaption>
             <span class="work__title">{title}</span>
-            <span class="work__details">{details}</span>
-            <span class="work__price">{price}</span>{status}
+            <span class="work__price">{price}</span>
+            <span class="work__details">{details}</span>{status}
           </figcaption>
         </figure>"""
 

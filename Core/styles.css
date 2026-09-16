@@ -188,20 +188,21 @@ body {
   text-wrap: balance;
 }
 
-/* Card caption, top to bottom: title / size, materials / price / status. */
+/* Card caption, top to bottom: title / price / size, materials / status.
+   The last two are secondary: 4px under the caption size. */
 .work figcaption > span { display: block; }
 
-.work__details,
-.work__price { margin-top: calc(2 * var(--u)); }
-
-.work__price { font-variant-numeric: tabular-nums; }
-
-/* Status: last line, 4px under the caption size, led by a coloured dot.
-   Add a state by adding a modifier with its own --dot. */
-.work__status {
-  margin-top: calc(6 * var(--u));
-  font-size: calc((var(--fs-caption) - 4) * var(--u));
+.work__price {
+  margin-top: calc(2 * var(--u));
+  font-variant-numeric: tabular-nums;
 }
+
+.work__details,
+.work__status { font-size: calc((var(--fs-caption) - 4) * var(--u)); }
+
+.work__details { margin-top: calc(6 * var(--u)); }
+.work__status  { margin-top: calc(4 * var(--u)); }
+
 .work__status::before {
   content: "•";
   color: var(--dot);
